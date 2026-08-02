@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+host: https://www.xairos.com
+notes: >-
+  Live probe 2026-07-21. The Wix-hosted site returns HTTP 400 for the standard
+  /.well-known/ discovery paths; no well-known documents are published. The site
+  DOES publish /llms.txt (200, captured in llms/xairos-llms.txt) which advertises
+  the Wix Site MCP endpoint (captured in mcp/xairos-mcp.yml).
+documents:
+- path: /.well-known/security.txt
+  status: 400
+- path: /.well-known/openid-configuration
+  status: 400
+- path: /.well-known/oauth-authorization-server
+  status: 400
+- path: /.well-known/api-catalog
+  status: 400
+- path: /.well-known/ai-plugin.json
+  status: 400

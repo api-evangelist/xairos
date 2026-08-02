@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.xairos.com/llms.txt
+status: published
+notes: >-
+  Wix Site MCP endpoint advertised in the site's published llms.txt and verified
+  live 2026-07-21 (JSON-RPC initialize returned serverInfo "Site Visitor Assistant
+  for site \"Xairos Systems Inc\"", protocolVersion 2025-03-26). No authentication
+  required; only public site information is exposed. This is a platform-provided
+  (Wix) site MCP server, not a first-party Xairos product API.
+server:
+  name: xairos-site
+  transport: http
+  url: https://www.xairos.com/_api/mcp
+  protocol_version: '2025-03-26'
+  server_info: Site Visitor Assistant for site "Xairos Systems Inc"
+  docs: https://dev.wix.com/docs/develop-websites/articles/get-started/about-the-wix-site-mcp
+tools:
+- name: GetBusinessDetails
+  description: Get business and site details (timezone, email, phone, address).
+- name: SearchInSite
+  description: Searches the site for information by search term.
+- name: SearchSiteApiDocs
+  description: Retrieves API documentation for the Wix business solutions installed
+    on the site and how to use those APIs.
+- name: GenerateVisitorToken
+  description: Creates a new visitor session and obtains a visitor access token for
+    the site; required before CallWixSiteAPI.
+- name: CallWixSiteAPI
+  description: Calls API methods on the site on a visitor's behalf (query site data,
+    book an appointment, start a purchase).
+- name: ExecuteWixAPI
+  description: Run JavaScript against the Wix REST API on the site on the visitor's
+    behalf.
+- name: BrowseWixRESTDocsMenu
+  description: Browse the Wix REST API documentation menu hierarchy.
+- name: ReadFullDocsArticle
+  description: Fetches a complete article from the Wix developer documentation portal.
+- name: ReadFullDocsMethodSchema
+  description: Fetches the full request/response schema for a Wix API method before
+    calling it via CallWixSiteAPI.

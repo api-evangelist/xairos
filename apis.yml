@@ -1,7 +1,25 @@
 aid: xairos
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/xairos.png
 name: Xairos
-description: Xairos is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Xairos Systems is a Techstars-backed company building quantum time transfer
+  (QTT) technology - a space-based, quantum-resilient global timing and synchronization
+  system positioned as a secure alternative to GPS for positioning, navigation, and
+  timing (PNT). The company targets sub-nanosecond accuracy while mitigating GPS
+  jamming and spoofing, serving critical infrastructure sectors such as transportation,
+  finance, data centers, and power grids. Xairos publishes no first-party developer
+  API, but its site ships an llms.txt and a live Wix Site MCP endpoint for agentic
+  access to public site content.
 url: https://raw.githubusercontent.com/api-evangelist/xairos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Quantum
+- Timing
+- Synchronization
+- PNT
+- GPS Alternative
+- Critical Infrastructure
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/xairos-domain-security.yml
 - type: Website
-  url: https://xairos.com/
+  url: https://www.xairos.com/
+- type: LLMsTxt
+  url: llms/xairos-llms.txt
+- type: MCPServer
+  url: mcp/xairos-mcp.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/xairos/
+- type: Twitter
+  url: https://x.com/xairos2
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
